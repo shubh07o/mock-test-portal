@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test Portal Layout</title>
+    <!-- Tailwind CSS load karein -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+    <div class="container mx-auto p-6 md:p-10 max-w-6xl">
+
+        <!-- Header -->
+        <header class="mb-10">
+            <h1 class="text-4xl font-bold text-center text-gray-800">
+                Mock Test Portal
+            </h1>
+            <p class="text-center text-gray-500 mt-2">
+                TEST YOURSELF FOR IMU CET
+            </p>
+        </header>
+
+        <!-- Subject-wise Tests Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6 border-b pb-3">
+                Subject-wise Mock Tests
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Physics Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Physics</h3>
+                    <ul class="space-y-4">
+                        <!-- 
+                            USER KE LIYE NOTE: 
+                            Neeche diye gaye 'href' mein link update kar diya gaya hai.
+                        -->
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <!-- YAHAN BADLAV KIYA GAYA HAI -->
+                            <h4 class="text-lg font-medium text-gray-900">Gravitation</h4>
+                            <!-- YAHAN LINK BADLA GAYA HAI -->
+                            <a href="https://shubh07o.github.io/gravitation/" class="inline-block bg-blue-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-blue-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Optics</h4>
+                            <a href="#" class="inline-block bg-blue-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-blue-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Electrostatics</h4>
+                            <a href="#" class="inline-block bg-blue-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-blue-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <!-- Naya test add karne ke liye upar wale 'li' block ko copy karein -->
+                    </ul>
+                </div>
+
+                <!-- Chemistry Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-green-600 mb-4">Chemistry</h3>
+                    <ul class="space-y-4">
+                        <!-- 
+                            USER KE LIYE NOTE: 
+                            Neeche diye gaye 'href="#"' mein # ki jagah apna test link daalein. 
+                        -->
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Organic</h4>
+                            <a href="#" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Physical</h4>
+                            <a href="#" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Inorganic</h4>
+                            <a href="#" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <!-- Naya test add karne ke liye upar wale 'li' block ko copy karein -->
+                    </ul>
+                </div>
+
+                <!-- Maths Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-red-600 mb-4">Maths</h3>
+                    <ul class="space-y-4">
+                        <!-- 
+                            USER KE LIYE NOTE: 
+                            Neeche diye gaye 'href="#"' mein # ki jagah apna test link daalein. 
+                        -->
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Calculus</h4>
+                            <a href="#" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Algebra</h4>
+                            <a href="#" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Vectors 3D</h4>
+                            <a href="#" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <!-- Naya test add karne ke liye upar wale 'li' block ko copy karein -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Mock Tests Section -->
+        <section>
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6 border-b pb-3">
+                Full Mock Tests (PCM)
+            </h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <ul class="space-y-4">
+                    <!-- 
+                        USER KE LIYE NOTE: 
+                        Neeche diye gaye 'href="#"' mein # ki jagah apna test link daalein. 
+                        Aap jitne chahein utne links copy-paste kar sakte hain.
+                    -->
+                    <li class="border border-gray-200 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <h4 class="text-xl font-medium text-gray-900 mb-2 sm:mb-0">Full Mock Test #1</h4>
+                        <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
+                            Start Mock Test
+                        </a>
+                    </li>
+                    <li class="border border-gray-200 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <h4 class="text-xl font-medium text-gray-900 mb-2 sm:mb-0">Full Mock Test #2</h4>
+                        <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
+                            Start Mock Test
+                        </a>
+                    </li>
+                    <li class="border border-gray-200 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <h4 class="text-xl font-medium text-gray-900 mb-2 sm:mb-0">Full Mock Test #3</h4>
+                        <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
+                            Start Mock Test
+                        </a>
+                    </li>
+                    <li class="border border-gray-200 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <h4 class="text-xl font-medium text-gray-900 mb-2 sm:mb-0">Full Mock Test #4</h4>
+                        <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
+                            Start Mock Test
+                        </a>
+                    </li>
+                    <!-- Naya test add karne ke liye upar wale 'li' block ko copy karein -->
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer Branding -->
+    <footer class="text-center p-6 mt-10">
+        <p class="text-sm text-gray-500">
+            Created by Shubham Yadav
+        </p>
+    </footer>
+
+</body>
+</html>
