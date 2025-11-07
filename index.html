@@ -56,7 +56,8 @@
                 <h2 class="text-3xl font-semibold text-gray-700 mb-6 border-b pb-3">
                     Select Subject
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Grid ab 3 columns ka ho sakta hai better layout ke liye -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <!-- Physics Link Card -->
                     <div id="btn-physics" class="bg-white p-8 rounded-lg shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200">
@@ -75,11 +76,23 @@
                         <h3 class="text-3xl font-semibold text-red-600 mb-4">Maths</h3>
                         <p class="text-gray-600">Subject-wise mock tests for Maths.</p>
                     </div>
+
+                    <!-- NEW: English Link Card -->
+                    <div id="btn-english" class="bg-white p-8 rounded-lg shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200">
+                        <h3 class="text-3xl font-semibold text-yellow-600 mb-4">English</h3>
+                        <p class="text-gray-600">Subject-wise mock tests for English.</p>
+                    </div>
+
+                    <!-- NEW: Aptitude, Reasoning & GS Link Card -->
+                    <div id="btn-aptitude" class="bg-white p-8 rounded-lg shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200">
+                        <h3 class="text-3xl font-semibold text-purple-600 mb-4">Aptitude, Reasoning & GS</h3>
+                        <p class="text-gray-600">Mock tests for Aptitude, Reasoning & GS.</p>
+                    </div>
                     
-                    <!-- Full Mock Test Link Card -->
-                    <div id="btn-full-mock" class="bg-white p-8 rounded-lg shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200">
+                    <!-- Full Mock Test Link Card (Ise last mein rakha hai) -->
+                    <div id="btn-full-mock" class="bg-white p-8 rounded-lg shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200 md:col-span-2 lg:col-span-1">
                         <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Full Mock Tests</h3>
-                        <p class="text-gray-600">Complete PCM mock tests.</p>
+                        <p class="text-gray-600">Complete PCM, English & Aptitude mock tests.</p>
                     </div>
                 </div>
             </section>
@@ -104,13 +117,13 @@
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg">
                             <h4 class="text-lg font-medium text-gray-900">Motion</h4>
-                            <a href="#" class="inline-block bg-blue-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-blue-600 transition duration-200">
+                            <a href="https://shubh07o.github.io/motion/" class="inline-block bg-blue-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-blue-600 transition duration-200">
                                 Start Mock Test
                             </a>
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg">
                             <h4 class="text-lg font-medium text-gray-900">Electrostatics</h4>
-                            <a href="#" class="inline-block bg-blue-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-blue-600 transition duration-200">
+                            <a href="https://shubh07o.github.io/electrostatics/" class="inline-block bg-blue-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-blue-600 transition duration-200">
                                 Start Mock Test
                             </a>
                         </li>
@@ -132,19 +145,19 @@
                      <ul class="space-y-4">
                         <li class="border border-gray-200 p-4 rounded-lg">
                             <h4 class="text-lg font-medium text-gray-900">Organic</h4>
-                            <a href="#" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
+                            <a href="https://shubh07o.github.io/organic/" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
                                 Start Mock Test
                             </a>
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg">
                             <h4 class="text-lg font-medium text-gray-900">Physical</h4>
-                            <a href="#" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
+                            <a href="https://shubh07o.github.io/physical-chemistry/" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
                                 Start Mock Test
                             </a>
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg">
                             <h4 class="text-lg font-medium text-gray-900">Inorganic</h4>
-                            <a href="#" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
+                            <a href="https://shubh07o.github.io/inorganic/" class="inline-block bg-green-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-green-600 transition duration-200">
                                 Start Mock Test
                             </a>
                         </li>
@@ -166,19 +179,19 @@
                     <ul class="space-y-4">
                         <li class="border border-gray-200 p-4 rounded-lg">
                             <h4 class="text-lg font-medium text-gray-900">Calculus</h4>
-                            <a href="#" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
+                            <a href="https://shubh07o.github.io/calculus/" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
                                 Start Mock Test
                             </a>
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg">
                             <h4 class="text-lg font-medium text-gray-900">Algebra</h4>
-                            <a href="#" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
+                            <a href="https://shubh07o.github.io/algebra/" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
                                 Start Mock Test
                             </a>
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg">
                             <h4 class="text-lg font-medium text-gray-900">Vectors 3D</h4>
-                            <a href="#" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
+                            <a href="https://shubh07o.github.io/3d-vector/" class="inline-block bg-red-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-red-600 transition duration-200">
                                 Start Mock Test
                             </a>
                         </li>
@@ -193,38 +206,101 @@
                     &larr; Back to Home
                 </button>
                 <h2 class="text-3xl font-semibold text-indigo-600 mb-6 border-b pb-3">
-                    Full Mock Tests (PCM)
+                    Full Mock Tests
                 </h2>
                 <!-- Original Full Mock Test Content -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <ul class="space-y-4">
                         <li class="border border-gray-200 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
                             <h4 class="text-xl font-medium text-gray-900 mb-2 sm:mb-0">Full Mock Test #1</h4>
-                            <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
+                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
                                 Start Mock Test
                             </a>
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
                             <h4 class="text-xl font-medium text-gray-900 mb-2 sm:mb-0">Full Mock Test #2</h4>
-                            <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
+                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
                                 Start Mock Test
                             </a>
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
                             <h4 class="text-xl font-medium text-gray-900 mb-2 sm:mb-0">Full Mock Test #3</h4>
-                            <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
+                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
                                 Start Mock Test
                             </a>
                         </li>
                         <li class="border border-gray-200 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
                             <h4 class="text-xl font-medium text-gray-900 mb-2 sm:mb-0">Full Mock Test #4</h4>
-                            <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
+                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-indigo-600 transition duration-200 text-center sm:text-left">
                                 Start Mock Test
                             </a>
                         </li>
                     </ul>
                 </div>
             </section>
+
+            <!-- 6. NEW: English Section (Yeh chupa rahega) -->
+            <section id="english-section" style="display: none;">
+                <!-- Back Button -->
+                <button class="back-btn mb-6 bg-gray-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-gray-600 transition duration-200">
+                    &larr; Back to Home
+                </button>
+                <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b pb-3">
+                    English Mock Tests
+                </h2>
+                <!-- English Card Content -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <ul class="space-y-4">
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900"> ENGLISH STUDY MATERIAL</h4>
+                            <a href="https://shubh07o.github.io/imu-english-hub/" class="inline-block bg-yellow-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-yellow-600 transition duration-200">
+                                LEARN IN NEW WAY
+                            </a>
+                        </li>
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Grammar Test #1</h4>
+                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-yellow-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-yellow-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 7. NEW: Aptitude, Reasoning & GS Section (Yeh chupa rahega) -->
+            <section id="aptitude-section" style="display: none;">
+                <!-- Back Button -->
+                <button class="back-btn mb-6 bg-gray-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-gray-600 transition duration-200">
+                    &larr; Back to Home
+                </button>
+                <h2 class="text-3xl font-semibold text-purple-600 mb-6 border-b pb-3">
+                    Aptitude, Reasoning & GS Mock Tests
+                </h2>
+                <!-- Aptitude Card Content -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <ul class="space-y-4">
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">General Aptitude Test #1</h4>
+                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-purple-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-purple-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                        <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">Logical Reasoning Test #1</h4>
+                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-purple-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-purple-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                         <li class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="text-lg font-medium text-gray-900">General Science (GS) Test #1</h4>
+                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-purple-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-purple-600 transition duration-200">
+                                Start Mock Test
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
 
         </main>
     </div>
@@ -249,8 +325,16 @@
     <!-- JavaScript (Page navigation ke liye) -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Sabhi 'screens' (sections) ke IDs
-            const screens = ['home-screen', 'physics-section', 'chemistry-section', 'maths-section', 'full-mock-section'];
+            // Sabhi 'screens' (sections) ke IDs - NAYE IDs ADD KIYE GAYE HAIN
+            const screens = [
+                'home-screen', 
+                'physics-section', 
+                'chemistry-section', 
+                'maths-section', 
+                'full-mock-section',
+                'english-section',    // NEW
+                'aptitude-section'    // NEW
+            ];
 
             // Ek function jo ek screen dikhata hai aur baaki sab hide kar deta hai
             function showScreen(screenId) {
@@ -273,6 +357,10 @@
             document.getElementById('btn-chemistry').addEventListener('click', () => showScreen('chemistry-section'));
             document.getElementById('btn-maths').addEventListener('click', () => showScreen('maths-section'));
             document.getElementById('btn-full-mock').addEventListener('click', () => showScreen('full-mock-section'));
+            // NAYE BUTTONS KE LIYE LISTENERS
+            document.getElementById('btn-english').addEventListener('click', () => showScreen('english-section'));
+            document.getElementById('btn-aptitude').addEventListener('click', () => showScreen('aptitude-section'));
+
 
             // Sabhi 'Back' buttons par click listener lagana
             const backButtons = document.querySelectorAll('.back-btn');
