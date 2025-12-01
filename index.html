@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mock Test Portal</title>
-    <!-- Tailwind CSS load karein -->
+    <title>IMU CET Mock Test Portal</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Inter font family -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,221 +12,282 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Page transition ko smooth banane ke liye (optional) */
-        section {
-            animation: fadeIn 0.3s ease-in-out;
+        /* Page transition animation */
+        .fade-in {
+            animation: fadeIn 0.4s ease-out;
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        /* Nautical Background Pattern for Header */
+        .nautical-bg {
+            background-color: #0a192f;
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
     </style>
 </head>
-<body class="bg-gray-100 min-h-screen">
+<body class="bg-gray-50 min-h-screen flex flex-col">
 
-    <div class="container mx-auto p-6 md:p-10 max-w-6xl">
+    <div class="flex-grow">
 
-        <!-- Header (Sabhi pages par same rahega) -->
-        <header class="mb-10">
-            <h1 class="text-4xl font-bold text-center text-gray-800">
-                  IMU CET 
-            </h1>
-            <p class="text-center text-gray-500 mt-2">
-                TEST YOURSELF FOR IMU CET
-            </p>
-            <!-- NEW BRANDING LINK (TOP) -->
-            <div class="flex justify-center items-center mt-4">
-                <a href="https://www.instagram.com/ydv_shubh.u?igsh=d3BvOWp1aGoxejQ5" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-600 hover:text-pink-600 transition-colors duration-200">
-                    <!-- Instagram SVG Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                    <span>Follow on Instagram</span>
-                </a>
+        <!-- Header with Maritime Theme -->
+        <header class="nautical-bg text-white pt-12 pb-24 px-6 rounded-b-[3rem] shadow-xl mb-0 relative z-0">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight">
+                    IMU CET <span class="text-yellow-400">COMMAND CENTER</span>
+                </h1>
+                <p class="text-blue-200 mt-3 text-lg font-medium mb-6">
+                    Navigate your way to success
+                </p>
+                
+                <!-- BRANDING LINK (Header) -->
+                <div class="flex justify-center items-center mb-8">
+                    <a href="https://www.instagram.com/ydv_shubh.u?igsh=d3BvOWp1aGoxejQ5" target="_blank" rel="noopener noreferrer" class="flex items-center bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-200 border border-white/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span class="text-sm font-semibold">Join the Crew on Instagram</span>
+                    </a>
+                </div>
+
+                <!-- Title Moved Inside Header for Perfect Fit -->
+                <h2 class="text-2xl font-bold text-white/90 flex items-center justify-center">
+                    <span class="bg-yellow-400 w-2 h-8 mr-3 rounded-full"></span>
+                    Choose Your Mission
+                </h2>
             </div>
         </header>
 
         <!-- Main Content Area -->
-        <main id="main-content">
+        <main id="main-content" class="container mx-auto px-6 max-w-4xl -mt-12 relative z-10">
 
-            <!-- 1. Home Screen (Yeh default mein dikhega) -->
-            <section id="home-screen">
-                <h2 class="text-3xl font-semibold text-gray-700 mb-6 border-b pb-3">
-                    Select Subject
-                </h2>
-                <!-- Grid ab 3 columns ka ho sakta hai better layout ke liye -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1. Home Screen -->
+            <section id="home-screen" class="fade-in">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     
-        
-
-                    <!-- NEW: English Link Card -->
-                    <div id="btn-english" class="bg-white p-8 rounded-lg shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200">
-                        <h3 class="text-3xl font-semibold text-yellow-600 mb-4">English</h3>
-                        <p class="text-gray-600">Subject-wise mock tests for English.</p>
+                    <!-- English Card with Icon -->
+                    <div id="btn-english" class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl cursor-pointer transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="bg-yellow-100 p-3 rounded-xl group-hover:bg-yellow-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-300 font-bold text-5xl opacity-20">01</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-yellow-600 transition-colors">English</h3>
+                        <p class="text-gray-500 text-sm">Master Idioms, Grammar, and Vocabulary. Essential for the verbal section.</p>
                     </div>
 
-                    <!-- NEW: Aptitude, Reasoning & GS Link Card -->
-                    <div id="btn-aptitude" class="bg-white p-8 rounded-lg shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200">
-                        <h3 class="text-3xl font-semibold text-purple-600 mb-4">Aptitude, Reasoning & GS</h3>
-                        <p class="text-gray-600">Mock tests for Aptitude, Reasoning & GS.</p>
+                    <!-- Aptitude Card with Icon -->
+                    <div id="btn-aptitude" class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl cursor-pointer transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="bg-purple-100 p-3 rounded-xl group-hover:bg-purple-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-300 font-bold text-5xl opacity-20">02</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-purple-600 transition-colors">Aptitude & GS</h3>
+                        <p class="text-gray-500 text-sm">Sharpen your Logical Reasoning and General Knowledge skills.</p>
                     </div>
-                    
-                    <!-- Full Mock Test Link Card (Ise last mein rakha hai) -->
-                    <div id="btn-full-mock" class="bg-white p-8 rounded-lg shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200 md:col-span-2 lg:col-span-1">
-                        <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Full Mock Tests</h3>
-                        <p class="text-gray-600">Complete PCM, English & Aptitude mock tests.</p>
+
+                </div>
+            </section>
+
+            <!-- 2. English Section -->
+            <section id="english-section" class="fade-in hidden mt-10">
+                <div class="flex items-center mb-6">
+                    <button class="back-btn mr-4 bg-white border border-gray-200 text-gray-600 hover:text-blue-600 hover:border-blue-300 p-2 rounded-full transition duration-200 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                    </button>
+                    <h2 class="text-3xl font-bold text-gray-800">English Mock Tests</h2>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="bg-yellow-500 h-2 w-full"></div>
+                    <div class="p-6 md:p-8">
+                        <ul class="space-y-4">
+                            <!-- List Item 1 -->
+                            <li class="bg-gray-50 hover:bg-yellow-50 border border-gray-200 hover:border-yellow-200 p-5 rounded-xl transition-colors duration-200 flex flex-col md:flex-row md:items-center justify-between group">
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-yellow-700">IDIOMS & PHRASES</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Essential phrases for the exam</p>
+                                </div>
+                                <a href="https://shubh07o.github.io/idioms/" class="mt-4 md:mt-0 inline-flex items-center justify-center bg-gray-900 text-white font-medium py-2 px-6 rounded-lg hover:bg-yellow-600 transition-all duration-200 shadow-lg shadow-yellow-500/30">
+                                    Start Learning
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <!-- List Item 2 -->
+                            <li class="bg-gray-50 hover:bg-yellow-50 border border-gray-200 hover:border-yellow-200 p-5 rounded-xl transition-colors duration-200 flex flex-col md:flex-row md:items-center justify-between group">
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-yellow-700">ONE WORD SUBSTITUTION</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Expand your vocabulary quickly</p>
+                                </div>
+                                <a href="https://shubh07o.github.io/ONE-WORD-SUBSTITUTION/" class="mt-4 md:mt-0 inline-flex items-center justify-center bg-gray-900 text-white font-medium py-2 px-6 rounded-lg hover:bg-yellow-600 transition-all duration-200 shadow-lg shadow-yellow-500/30">
+                                    Start Learning
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </li> 
+
+                            <!-- List Item 3 -->
+                            <li class="bg-gray-50 hover:bg-yellow-50 border border-gray-200 hover:border-yellow-200 p-5 rounded-xl transition-colors duration-200 flex flex-col md:flex-row md:items-center justify-between group">
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-yellow-700">HOMOPHONES</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Confusing words clarified</p>
+                                </div>
+                                <a href="https://shubh07o.github.io/homophones/" class="mt-4 md:mt-0 inline-flex items-center justify-center bg-gray-900 text-white font-medium py-2 px-6 rounded-lg hover:bg-yellow-600 transition-all duration-200 shadow-lg shadow-yellow-500/30">
+                                    Start Learning
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </li> 
+                        </ul>
                     </div>
                 </div>
             </section>
 
-           
+            <!-- 3. Aptitude Section -->
+            <section id="aptitude-section" class="fade-in hidden mt-10">
+                <div class="flex items-center mb-6">
+                    <button class="back-btn mr-4 bg-white border border-gray-200 text-gray-600 hover:text-blue-600 hover:border-blue-300 p-2 rounded-full transition duration-200 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                    </button>
+                    <h2 class="text-3xl font-bold text-gray-800">Aptitude & GS</h2>
+                </div>
 
-            <!-- 1. NEW: English Section (Yeh chupa rahega) -->
-            <section id="english-section" style="display: none;">
-                <!-- Back Button -->
-                <button class="back-btn mb-6 bg-gray-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-gray-600 transition duration-200">
-                    &larr; Back to Home
-                </button>
-                <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b pb-3">
-                    English Mock Tests
-                </h2>
-                <!-- English Card Content -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <ul class="space-y-4">
-                        <li class="border border-gray-200 p-4 rounded-lg">
-                            <h4 class="text-lg font-medium text-gray-900">IDIOMS</h4>
-                            <a href="https://shubh07o.github.io/idioms/" class="inline-block bg-yellow-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-yellow-600 transition duration-200">
-                                LEARN IN NEW WAY
-                            </a>
-                        </li>
-                        <li class="border border-gray-200 p-4 rounded-lg">
-                            <h4 class="text-lg font-medium text-gray-900">ONE WORD SUBSTITUTION</h4>
-                            <a href="https://shubh07o.github.io/ONE-WORD-SUBSTITUTION/" class="inline-block bg-yellow-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-yellow-600 transition duration-200">
-                                LEARN IN NEW WAY
-                            </a>
-                        </li> 
-                        <li class="border border-gray-200 p-4 rounded-lg">
-                            <h4 class="text-lg font-medium text-gray-900">HOMOPHONES</h4>
-                            <a href="https://shubh07o.github.io/homophones/" class="inline-block bg-yellow-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-yellow-600 transition duration-200">
-                                LEARN IN NEW WAY
-                            </a>
-                        </li> 
-                    </ul>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="bg-purple-600 h-2 w-full"></div>
+                    <div class="p-6 md:p-8">
+                        <ul class="space-y-4">
+                            <!-- List Item 1 -->
+                            <li class="bg-gray-50 hover:bg-purple-50 border border-gray-200 hover:border-purple-200 p-5 rounded-xl transition-colors duration-200 flex flex-col md:flex-row md:items-center justify-between group">
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-purple-700">General Aptitude Test #1</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Quantitative ability practice</p>
+                                </div>
+                                <a href="https://shubh07o.github.io/coming-soon/" class="mt-4 md:mt-0 inline-flex items-center justify-center bg-purple-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-purple-700 transition-all duration-200 shadow-lg shadow-purple-500/30">
+                                    Start Test
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <!-- List Item 2 -->
+                            <li class="bg-gray-50 hover:bg-purple-50 border border-gray-200 hover:border-purple-200 p-5 rounded-xl transition-colors duration-200 flex flex-col md:flex-row md:items-center justify-between group">
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-purple-700">Logical Reasoning Test #1</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Patterns and logic puzzles</p>
+                                </div>
+                                <a href="https://shubh07o.github.io/coming-soon/" class="mt-4 md:mt-0 inline-flex items-center justify-center bg-purple-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-purple-700 transition-all duration-200 shadow-lg shadow-purple-500/30">
+                                    Start Test
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                             <!-- List Item 3 -->
+                             <li class="bg-gray-50 hover:bg-purple-50 border border-gray-200 hover:border-purple-200 p-5 rounded-xl transition-colors duration-200 flex flex-col md:flex-row md:items-center justify-between group">
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-purple-700">General Science (GS) Test #1</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Physics and basic science GK</p>
+                                </div>
+                                <a href="https://shubh07o.github.io/coming-soon/" class="mt-4 md:mt-0 inline-flex items-center justify-center bg-purple-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-purple-700 transition-all duration-200 shadow-lg shadow-purple-500/30">
+                                    Start Test
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-
-            <!-- 2. NEW: Aptitude, Reasoning & GS Section (Yeh chupa rahega) -->
-            <section id="aptitude-section" style="display: none;">
-                <!-- Back Button -->
-                <button class="back-btn mb-6 bg-gray-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-gray-600 transition duration-200">
-                    &larr; Back to Home
-                </button>
-                <h2 class="text-3xl font-semibold text-purple-600 mb-6 border-b pb-3">
-                    Aptitude, Reasoning & GS Mock Tests
-                </h2>
-                <!-- Aptitude Card Content -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <ul class="space-y-4">
-                        <li class="border border-gray-200 p-4 rounded-lg">
-                            <h4 class="text-lg font-medium text-gray-900">General Aptitude Test #1</h4>
-                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-purple-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-purple-600 transition duration-200">
-                                Start Mock Test
-                            </a>
-                        </li>
-                        <li class="border border-gray-200 p-4 rounded-lg">
-                            <h4 class="text-lg font-medium text-gray-900">Logical Reasoning Test #1</h4>
-                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-purple-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-purple-600 transition duration-200">
-                                Start Mock Test
-                            </a>
-                        </li>
-                         <li class="border border-gray-200 p-4 rounded-lg">
-                            <h4 class="text-lg font-medium text-gray-900">General Science (GS) Test #1</h4>
-                            <a href="https://shubh07o.github.io/coming-soon/" class="inline-block bg-purple-500 text-white font-semibold py-2 px-5 rounded-md mt-3 hover:bg-purple-600 transition duration-200">
-                                Start Mock Test
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
 
         </main>
     </div>
 
     <!-- Footer Branding -->
-    <footer class="text-center p-6 mt-10">
-        <!-- UPDATED BRANDING LINK (BOTTOM) -->
-        <a href="https://www.instagram.com/ydv_shubh.u?igsh=d3BvOWp1aGoxejQ5" target="_blank" rel="noopener noreferrer" class="flex justify-center items-center text-lg text-gray-600 hover:text-pink-600 transition-colors duration-200">
-            <!-- Instagram SVG Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-            <span class="font-medium">Follow @_shubh.x7</span>
+    <footer class="text-center p-6 mt-10 text-gray-400 text-sm">
+        <a href="https://www.instagram.com/ydv_shubh.u?igsh=d3BvOWp1aGoxejQ5" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center text-gray-500 hover:text-pink-600 transition-colors duration-200 mb-2">
+            <span class="font-medium">Follow @ydv_shubh.u on Instagram</span>
         </a>
-        <p class="text-sm text-gray-500 mt-2">
-            Created by Shubham Yadav
+        <p>
+            Designed & Developed by Shubham Yadav
         </p>
     </footer>
 
-    <!-- JavaScript (Page navigation ke liye) -->
+    <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Sabhi 'screens' (sections) ke IDs - NAYE IDs ADD KIYE GAYE HAIN
+            // Screen IDs matching the HTML sections
             const screens = [
                 'home-screen', 
-                'physics-section', 
-                'chemistry-section', 
-                'maths-section', 
-                'full-mock-section',
-                'english-section',    // NEW
-                'aptitude-section'    // NEW
+                'english-section',
+                'aptitude-section'
             ];
 
-            // Ek function jo ek screen dikhata hai aur baaki sab hide kar deta hai
+            // Function to handle switching screens
             function showScreen(screenId) {
                 screens.forEach(id => {
                     const screen = document.getElementById(id);
                     if (screen) {
                         if (id === screenId) {
-                            screen.style.display = 'block';
+                            screen.classList.remove('hidden');
+                            screen.style.display = 'block'; // Ensure it's visible
+                            
+                            // Re-trigger animation
+                            screen.classList.remove('fade-in');
+                            void screen.offsetWidth; // Trigger reflow
+                            screen.classList.add('fade-in');
+
                         } else {
-                            screen.style.display = 'none';
+                            screen.classList.add('hidden');
+                            screen.style.display = 'none'; // Ensure it's hidden
                         }
                     }
                 });
-                // Har baar naya section dikhane par page ke top par scroll karein
                 window.scrollTo(0, 0);
             }
 
-            // Home screen ke buttons par click listener lagana
-            document.getElementById('btn-physics').addEventListener('click', () => showScreen('physics-section'));
-            document.getElementById('btn-chemistry').addEventListener('click', () => showScreen('chemistry-section'));
-            document.getElementById('btn-maths').addEventListener('click', () => showScreen('maths-section'));
-            document.getElementById('btn-full-mock').addEventListener('click', () => showScreen('full-mock-section'));
-            // NAYE BUTTONS KE LIYE LISTENERS
-            document.getElementById('btn-english').addEventListener('click', () => showScreen('english-section'));
-            document.getElementById('btn-aptitude').addEventListener('click', () => showScreen('aptitude-section'));
+            // --- Event Listeners for Home Screen Buttons ---
+            
+            const btnEnglish = document.getElementById('btn-english');
+            if(btnEnglish) btnEnglish.addEventListener('click', () => showScreen('english-section'));
+
+            const btnAptitude = document.getElementById('btn-aptitude');
+            if(btnAptitude) btnAptitude.addEventListener('click', () => showScreen('aptitude-section'));
 
 
-            // Sabhi 'Back' buttons par click listener lagana
+            // --- Event Listeners for Back Buttons ---
             const backButtons = document.querySelectorAll('.back-btn');
             backButtons.forEach(button => {
                 button.addEventListener('click', () => showScreen('home-screen'));
             });
 
-            // Page load hone par default mein 'home-screen' dikhana
+            // Initial Load
             showScreen('home-screen');
         });
     </script>
 
 </body>
 </html>
-
-
-
-
-
